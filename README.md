@@ -10,3 +10,9 @@ This is an example asset pipeline using gcfpack to create a new GCF file.
 4. Invoke gcfpack to create the GCF file
 5. Print the location of all interesting files
 6. Wait for user input before deleting the temporary folder with the example files
+
+## Running the pipeline
+
+```
+python -mpipeline
+```
