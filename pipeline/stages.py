@@ -42,14 +42,16 @@ def create_gcf_description(results):
     desc_path = path.join(tmpdir, "meta.json")
 
     desc = {
-        "header": {"version": 2},
+        "header": {"version": 3},
         "resources": [{
-            "type": "image",
+            "type": "texture",
             "format": "R8G8B8_UINT",
-            "width": 2,
-            "height": 2,
-            "flags": ["image2d"],
+            "base_width": 2,
+            "base_height": 2,
+            "flags": ["texture2d"],
             "supercompression_scheme": "deflate",
+            "texture_group": 0,
+            "layer_count": 1,
             "mip_levels": [
                 {
                     "row_stride": 8,
